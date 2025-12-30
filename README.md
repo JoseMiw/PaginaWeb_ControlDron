@@ -1,16 +1,16 @@
 # Caracteristicas
 - Control de 4 servos independientes mediante joysticks virtuales personalizados
 
-Comunicación en tiempo real usando WebSockets para baja latencia
+- Comunicación en tiempo real usando WebSockets para baja latencia
 
-Interfaz responsiva que funciona en dispositivos móviles y desktop
+- Interfaz responsiva que funciona en dispositivos móviles
 
-Modos de operación: Manual y Giro controlado
+- Modos de operación: Manual y Giro controlado
 
-Sistema de notificaciones visuales (toasts) para feedback al usuario
+- Sistema de notificaciones visuales al usuario
 
-Indicadores de conexión en tiempo real
+- Indicadores de conexión en tiempo real
 
-Prevención de conflictos entre comandos simultáneos
+- Prevención de conflictos entre comandos simultáneos
 
-Simulación completa para demostración sin hardware
+- Simulación completa para demostración sin hardware
