@@ -102,11 +102,11 @@ ESP32 (main.cpp):
 
 # Instalación y Uso
 1. Configuración del Hardware:
-// Pines de servos en ESP32
-const int pinServoX = 2;   // Joystick Izquierdo Arriba/Abajo
-const int pinServoY = 15;  // Joystick Izquierdo Izquierda/Derecha
-const int pinServoA = 13;  // Joystick Derecho Arriba/Abajo
-const int pinServoB = 14;  // Servo Extra
+  // Pines de servos en ESP32
+  const int pinServoX = 2;   // Joystick Izquierdo Arriba/Abajo
+  const int pinServoY = 15;  // Joystick Izquierdo Izquierda/Derecha
+  const int pinServoA = 13;  // Joystick Derecho Arriba/Abajo
+  const int pinServoB = 14;  // Servo Extra
 
 2. Despliegue Web:
  - Subir index.html a cualquier servidor web o GitHub Pages
@@ -115,46 +115,46 @@ const int pinServoB = 14;  // Servo Extra
  - Acceder a http://192.168.4.1 desde el navegador
 
 3. Modo Demostración:
-El archivo index.html incluye un modo demostración completo que funciona sin ESP32, perfecto para portfolios y demostraciones online.
+   El archivo index.html incluye un modo demostración completo que funciona sin ESP32, perfecto para portfolios y demostraciones online.
 
-Protocolo de Comandos
-Desde Web → ESP32:
-X:[60-120] - Control Servo X
+   Protocolo de Comandos
+   Desde Web → ESP32:
+   X:[60-120] - Control Servo X
 
-Y:[60-120] - Control Servo Y
+   Y:[60-120] - Control Servo Y
 
-A:[60-120] - Control Servo A
+   A:[60-120] - Control Servo A
 
-B:[60-120] - Control Servo B
+   B:[60-120] - Control Servo B
 
-GIRO:INICIAR - Inicia giro de 1 segundo
+   GIRO:INICIAR - Inicia giro de 1 segundo
 
-GIRO:CANCELAR - Cancela giro en curso
+   GIRO:CANCELAR - Cancela giro en curso
 
-Desde ESP32 → Web:
-GIRO:INICIADO - Confirmación de giro iniciado
+   Desde ESP32 → Web:
+   GIRO:INICIADO - Confirmación de giro iniciado
 
-GIRO:COMPLETADO - Notificación de giro finalizado
+   GIRO:COMPLETADO - Notificación de giro finalizado
 
-GIRO:CANCELADO - Confirmación de giro cancelado
+   GIRO:CANCELADO - Confirmación de giro cancelado
 
-MODO:MANUAL - Estado del modo operativo
+   MODO:MANUAL - Estado del modo operativo
 
 # Valor del Proyecto
 Este proyecto demuestra competencias en:
 
-Desarrollo Full Stack: Integración de frontend web con hardware embebido
+ - Desarrollo Full Stack: Integración de frontend web con hardware embebido
 
-Comunicación en Tiempo Real: Implementación de WebSockets para baja latencia
+ - Comunicación en Tiempo Real: Implementación de WebSockets para baja latencia
 
-Diseño de UI/UX: Creación de interfaces intuitivas y responsivas
+ - Diseño de UI/UX: Creación de interfaces intuitivas y responsivas
 
-Programación Embebida: Control de hardware con ESP32 y C++
+ - Programación Embebida: Control de hardware con ESP32 y C++
 
-Protocolos de Red: Configuración de Access Point y servidores web
+ - Protocolos de Red: Configuración de Access Point y servidores web
 
-Control de Sistemas: Manipulación precisa de servos motores
+ - Control de Sistemas: Manipulación precisa de servos motores
 
-Gestión de Estados: Sistema robusto para prevenir conflictos de comandos
+ - Gestión de Estados: Sistema robusto para prevenir conflictos de comandos
 
-Ideal para aplicaciones de robótica, drones educativos, control remoto de dispositivos y demostraciones de IoT. La arquitectura modular permite fácil extensión para más servos, sensores o funcionalidades adicionales.
+ - Ideal para aplicaciones de robótica, drones educativos, control remoto de dispositivos y demostraciones de IoT. La arquitectura modular permite fácil extensión para más servos, sensores o funcionalidades adicionales.
