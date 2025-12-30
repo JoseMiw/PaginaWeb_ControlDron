@@ -28,9 +28,9 @@
 
 # Archivos Principales del Proyecto:
  # index.html - Interfaz web completa con:
-      - 4 joysticks virtuales independientes (2 verticales, 2 horizontales)
+   - 4 joysticks virtuales independientes (2 verticales, 2 horizontales)
       
-      - Panel de control central con botones de acción
+   - Panel de control central con botones de acción
 
 Sistema de notificaciones (toasts)
 
