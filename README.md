@@ -26,7 +26,7 @@
 
 - Servidor Web: WebServer para ESP32
 
-# Archivos Principales del Proyecto:
+# Archivos Principales del Proyecto
  # index.html - Interfaz web completa con:
    - 4 joysticks virtuales independientes (2 verticales, 2 horizontales)
    - Panel de control central con botones de acción
@@ -48,65 +48,57 @@
 
 # Funcionalidades Principales
 1. Sistema de Joysticks Virtuales
-Joystick Izquierdo - Vertical: Controla Servo X (movimiento arriba/abajo)
+ - Joystick Izquierdo - Vertical: Controla Servo X (movimiento arriba/abajo)
 
-Joystick Izquierdo - Horizontal: Controla Servo Y (movimiento izquierda/derecha)
+ - Joystick Izquierdo - Horizontal: Controla Servo Y (movimiento izquierda/derecha)
 
-Joystick Derecho - Vertical: Controla Servo A (movimiento adicional)
+ - Joystick Derecho - Vertical: Controla Servo A (movimiento adicional)
 
-Joystick Derecho - Horizontal: Controla Servo B (servo extra)
+ - Joystick Derecho - Horizontal: Controla Servo B (servo extra)
 
-Cada joystick convierte el arrastre del usuario en valores angulares (60°-120°) que se envían al ESP32.
+ - Cada joystick convierte el arrastre del usuario en valores angulares (60°-120°) que se envían al ESP32.
 
 2. Comunicación WebSocket
-Conexión bidireccional en tiempo real
+ - Conexión bidireccional en tiempo real
 
-Comandos simples tipo X:90, Y:120, A:60, B:90
+ - Comandos simples tipo X:90, Y:120, A:60, B:90
 
-Eventos de sistema: GIRO:INICIAR, GIRO:CANCELAR
+ - Eventos de sistema: GIRO:INICIAR, GIRO:CANCELAR
 
-Feedback del estado: GIRO:INICIADO, GIRO:COMPLETADO
+ - Feedback del estado: GIRO:INICIADO, GIRO:COMPLETADO
 
 3. Control Central
-Centrar Servos: Botón para regresar todos los servos a posición neutral (90°)
+ - Centrar Servos: Botón para regresar todos los servos a posición neutral (90°)
 
-Giro Controlado: Sistema de giro único de 1 segundo con cancelación
+ - Giro Controlado: Sistema de giro único de 1 segundo con cancelación
 
-Prevención de conflictos: Bloqueo de joysticks durante giros activos
+ - Prevención de conflictos: Bloqueo de joysticks durante giros activos
 
 4. Interfaz de Usuario
-Diseño moderno con gradientes y efectos visuales
+ - Diseño moderno con gradientes y efectos visuales
 
-Responsive para móviles (media queries)
+ - Responsive para móviles (media queries)
 
-Sistema de notificaciones tipo "toast"
+ - Sistema de notificaciones tipo "toast"
 
-Indicadores visuales de estado de conexión
+ - Indicadores visuales de estado de conexión
 
-Feedback táctil y visual en tiempo real
+ - Feedback táctil y visual en tiempo real
 
-# Componentes Clave:
+# Componentes Clave
 Clase DroneController (JavaScript):
-Gestión de conexión WebSocket
-
-Control de eventos de joysticks
-
-Manejo de estados de giro
-
-Sistema de notificaciones
-
-Prevención de comandos conflictivos
+ - Gestión de conexión WebSocket
+ - Control de eventos de joysticks
+ - Manejo de estados de giro
+ - Sistema de notificaciones
+ - Prevención de comandos conflictivos
 
 ESP32 (main.cpp):
-Access Point: DroneRobot (contraseña: 12345678)
-
-Servidor Web en puerto 80 (interfaz)
-
-Servidor WebSocket en puerto 81 (comandos)
-
-Control PWM de 4 servos (pines 2, 15, 13, 14)
-
-Sistema de temporización para giros controlados
+ - Access Point: DroneRobot (contraseña: 12345678)
+ - Servidor Web en puerto 80 (interfaz)
+ - Servidor WebSocket en puerto 81 (comandos)
+ - Control PWM de 4 servos (pines 2, 15, 13, 14)
+ - Sistema de temporización para giros controlados
 
 # Instalación y Uso
 1. Configuración del Hardware:
@@ -115,14 +107,12 @@ const int pinServoX = 2;   // Joystick Izquierdo Arriba/Abajo
 const int pinServoY = 15;  // Joystick Izquierdo Izquierda/Derecha
 const int pinServoA = 13;  // Joystick Derecho Arriba/Abajo
 const int pinServoB = 14;  // Servo Extra
+
 2. Despliegue Web:
-Subir index.html a cualquier servidor web o GitHub Pages
-
-Compilar y cargar main.cpp al ESP32 usando PlatformIO
-
-Conectar al WiFi DroneRobot desde cualquier dispositivo
-
-Acceder a http://192.168.4.1 desde el navegador
+ - Subir index.html a cualquier servidor web o GitHub Pages
+ - Compilar y cargar main.cpp al ESP32 usando PlatformIO
+ - Conectar al WiFi DroneRobot desde cualquier dispositivo
+ - Acceder a http://192.168.4.1 desde el navegador
 
 3. Modo Demostración:
 El archivo index.html incluye un modo demostración completo que funciona sin ESP32, perfecto para portfolios y demostraciones online.
