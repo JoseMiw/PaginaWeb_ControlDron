@@ -1,5 +1,5 @@
 # Caracteristicas
-Control de 4 servos independientes mediante joysticks virtuales personalizados
+- Control de 4 servos independientes mediante joysticks virtuales personalizados
 
 Comunicación en tiempo real usando WebSockets para baja latencia
 
